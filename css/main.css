@@ -1,0 +1,123 @@
+
+body {
+ 
+  color: #ffffffdb;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.6px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1.5px;
+  font-family: "Jost", sans-serif;
+  color: #fff;
+}
+
+::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.sideBar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 99;
+  background-color: black;
+  color: #fff;
+}
+
+.sideBar a {
+  color: #fff;
+  transition: color 200ms ease-in-out;
+}
+
+.innerBar {
+  height: 100%;
+}
+
+.navLinks li {
+  padding-block: 8px;
+  position: relative;
+  top: 300px;
+}
+
+
+
+.data {
+  min-height: 100vh;
+  background-color: black;
+}
+
+.copyrights p {
+  max-width: 208px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.layer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f9f6f6ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: top 350ms ease-in-out;
+}
+
+.layer h2 {
+  color: black;
+}
+.layer .pdata{
+  font-size: 14px;
+}
+.item:hover .layer {
+  top: 0;
+}
+
+.inputByName,
+.inputByLetter {
+  position: relative;
+  z-index: 9999;
+}
+
+input::placeholder {
+  color: gray !important;
+}
+
+.area,
+.ingredient {
+  cursor: pointer;
+}
+
